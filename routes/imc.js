@@ -5,7 +5,7 @@ var router = express.Router();
 
 /* calculate the sum of two numbers */
 router.post("/", function (req, res) {
-  console.log("calculator running ...");
+  console.log("Imc running ...");
   const payload = req.body;
   var value = calculateImc.calculate(payload.weight, payload.height);
 
